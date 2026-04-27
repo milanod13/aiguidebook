@@ -5,6 +5,7 @@ Guideboken hjelper studenter med ansvarlig og etisk bruk av kunstig intelligens.
 
 ## Mappestruktur
 
+```
 aiguidebook/
 ├── index.html               # Forside
 ├── README.md                # Denne filen
@@ -21,6 +22,7 @@ aiguidebook/
     ├── eksamen.html         # Eksamensforberedelse
     ├── faq.html             # Ofte stilte spørsmål
     └── ordliste.html        # Ordliste
+```
 
 ## Teknologi
 
