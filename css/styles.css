@@ -1,0 +1,1760 @@
+/* TILBAKESTILLING OG BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #1a1a2e;
+    animation: fadeIn 0.6s ease;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0 24px;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1a1a2e;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.navbar-links a.active {
+    color: #1d4ed8;
+    border-bottom: 2px solid #1d4ed8;
+    padding-bottom: 4px;
+}
+
+.navbar-links a:hover {
+    color: #1d4ed8;
+}
+
+/* PRIMÆRKNAPP */
+.btn-primary {
+    background-color: #1d3a6e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1e40af;
+}
+
+/* SEKUNDÆRKNAPP */
+.btn-secondary {
+    background-color: transparent;
+    color: #1d3a6e;
+    border: 2px solid #1d3a6e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #1d3a6e;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    background-color: #e8f0fb;
+    padding: 80px 24px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    max-width: 580px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a2e;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.icon-dark {
+    background-color: #1d3a6e;
+}
+
+.icon-blue {
+    background-color: #3b82f6;
+}
+
+/* PERSONVERNVARSEL (US-NFR12) */
+.alert-banner {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-left: 4px solid #ef4444;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 24px auto;
+    border-radius: 8px;
+}
+
+.alert-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.alert-banner p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.alert-banner strong {
+    color: #991b1b;
+}
+
+/* LÆRINGSKORT */
+.cards-section {
+    padding: 80px 24px;
+    background-color: white;
+}
+
+.cards-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cards-container h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 28px;
+    color: #1d4ed8;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.card p {
+    font-size: 15px;
+    color: #4b5563;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.card a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* BUNNTEKST */
+.footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 64px 24px 0;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #1e293b;
+}
+
+.footer-brand .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.6;
+    max-width: 240px;
+}
+
+.footer-column h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column ul li {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.footer-column ul a {
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+.footer-column ul a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* SIST OPPDATERT I FOOTER (US-NFR02) */
+.sist-oppdatert-footer {
+    font-size: 12px;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+/* SIDEOVERSKRIFT */
+.page-header {
+    padding: 60px 24px 40px;
+    background-color: white;
+}
+
+.page-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+
+.page-header p {
+    font-size: 18px;
+    color: #374151;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* FANER (US-FR01, US-FR02) */
+.tabs-section {
+    padding: 0 24px 80px;
+    background-color: white;
+}
+
+.tabs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    gap: 0;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+    color: #1d3a6e;
+}
+
+.tab-btn.active {
+    color: #1d3a6e;
+    border-bottom: 3px solid #1d3a6e;
+    font-weight: 700;
+}
+
+/* FANEINNHOLD */
+.tab-innhold {
+    display: none;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.tab-innhold.aktiv {
+    display: flex;
+}
+
+/* SCENARIOKORT */
+.scenario-kort {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 32px;
+    border-left: 5px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.scenario-kort.tillatt {
+    border-left-color: #16a34a;
+}
+
+.scenario-kort.juks {
+    border-left-color: #dc2626;
+}
+
+.scenario-kort.grense {
+    border-left-color: #d97706;
+}
+
+.scenario-kort h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.scenario-kort hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 4px 0;
+}
+
+.scenario-merke {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.merke-tillatt {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.merke-juks {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
+
+.merke-grense {
+    background-color: #fef9c3;
+    color: #d97706;
+}
+
+.scenario-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6b7280;
+    letter-spacing: 0.05em;
+    margin-top: 8px;
+}
+
+.retningslinje {
+    font-size: 15px;
+    color: #374151;
+}
+
+/* USIKKER-BANNER */
+.usikker-banner {
+    padding: 0 24px 80px;
+    background-color: white;
+}
+
+.usikker-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eff6ff;
+    border-radius: 12px;
+    padding: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.usikker-container h2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.usikker-container p {
+    font-size: 16px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* FALLBACK UTEN JAVASCRIPT (US-NFR13) */
+.tab-innhold {
+    display: none;
+}
+
+.tab-innhold.aktiv {
+    display: flex;
+}
+
+.no-js .tab-innhold {
+    display: flex;
+}
+
+.no-js .tabs {
+    display: none;
+}
+
+/* MELLOMROM MELLOM FANER UTEN JAVASCRIPT (US-NFR13) */
+.no-js .tab-innhold + .tab-innhold {
+    margin-top: 48px;
+    padding-top: 48px;
+    border-top: 2px solid #e5e7eb;
+}
+
+/* BRØDSMULESTI (US-NFR07) */
+.breadcrumb {
+    padding: 12px 24px;
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.breadcrumb-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.breadcrumb-container a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.breadcrumb-container a:hover {
+    text-decoration: underline;
+}
+
+/* SIDE-LAYOUT MED SIDEBAR */
+.side-layout {
+    padding: 48px 24px 80px;
+    background-color: white;
+}
+
+.side-layout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    align-items: start;
+}
+
+.side-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.kilde-eksempel {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.kode-blokk {
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.kode-blokk code {
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    color: #e2e8f0;
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: block;
+    min-width: 0;
+    flex: 1;
+}
+
+.kopier-knapp {
+    background-color: #334155;
+    color: #e2e8f0;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.kopier-knapp:hover {
+    background-color: #475569;
+}
+
+.kopier-knapp.kopiert {
+    background-color: #16a34a;
+    color: white;
+}
+
+/* VIKTIG-BOKS */
+.viktig-boks {
+    background-color: #eff6ff;
+    border-left: 4px solid #1d4ed8;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.viktig-tittel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.viktig-tittel h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.viktig-boks ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.viktig-boks ul li {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+/* SIST OPPDATERT (US-IK01) */
+.sist-oppdatert {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* SIDEBAR */
+.side-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: sticky;
+    top: 80px;
+    align-self: start;
+}
+
+.sidebar-boks {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.sidebar-boks h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+
+.sidebar-boks ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-boks ul a {
+    font-size: 14px;
+    color: #4b5563;
+    text-decoration: none;
+}
+
+.sidebar-boks ul a:hover {
+    color: #1d4ed8;
+}
+
+.aktiv-lenke {
+    color: #1d4ed8 !important;
+    font-weight: 600;
+}
+
+.sidebar-mork {
+    background-color: #1d3a6e;
+    border-color: #1d3a6e;
+}
+
+.sidebar-mork h3 {
+    color: white;
+}
+
+.sidebar-mork p {
+    font-size: 14px;
+    color: #bfdbfe;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.sidebar-knapp {
+    display: inline-block;
+    background-color: white;
+    color: #1d3a6e;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sidebar-knapp:hover {
+    background-color: #e0f2fe;
+}
+
+/* SJEKKLISTE OVERSKRIFT (US-FR06, US-FR09) */
+.sjekkliste-header {
+    padding: 60px 24px 40px;
+    background-color: white;
+}
+
+.sjekkliste-header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sjekkliste-header h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+}
+
+.sjekkliste-header p {
+    font-size: 18px;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+/* FREMGANGSINDIKATOR */
+.fremgang {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.fremgang-label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.fremgang-teller {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1d4ed8;
+}
+
+.fremgang-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #e5e7eb;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.fremgang-bar-fill {
+    height: 100%;
+    background-color: #1d4ed8;
+    border-radius: 999px;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* SJEKKLISTE ELEMENTER */
+.sjekkliste-seksjon {
+    padding: 0 24px 80px;
+    background-color: white;
+}
+
+.sjekkliste-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sjekk-element {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.sjekk-element:hover {
+    border-color: #1d4ed8;
+}
+
+.sjekk-element.avkrysset {
+    background-color: #f0fdf4;
+    border-color: #16a34a;
+}
+
+.sjekk-element input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-top: 2px;
+    accent-color: #1d4ed8;
+}
+
+.sjekk-element label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.sjekk-tittel {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.sjekk-element.avkrysset .sjekk-tittel {
+    color: #16a34a;
+    text-decoration: line-through;
+}
+
+.sjekk-beskrivelse {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* HANDLINGSKNAPPER */
+.sjekkliste-knapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.btn-tilbakestill {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0;
+}
+
+.btn-tilbakestill:hover {
+    color: #1a1a2e;
+}
+
+.btn-pdf {
+    background-color: transparent;
+    color: #1d3a6e;
+    border: 2px solid #1d3a6e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-pdf:hover {
+    background-color: #1d3a6e;
+    color: white;
+}
+
+/* LOGO HOVER EFFEKT */
+a.navbar-logo-link:hover .navbar-logo {
+    opacity: 0.6;
+    transform: scale(0.97);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+a.navbar-logo-link .navbar-logo {
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* SIDEOVERGANGSANIMASJON - fade inn ved sidelasting */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* DROPDOWN NAVIGASJON */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #4b5563;
+    cursor: pointer;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.dropdown-btn:hover {
+    color: #1d4ed8;
+}
+
+.dropdown-btn.active {
+    color: #1d4ed8;
+    border-bottom: 2px solid #1d4ed8;
+    padding-bottom: 4px;
+}
+
+.dropdown-meny {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-width: 220px;
+    z-index: 200;
+    list-style: none;
+    padding: 8px 0;
+}
+
+.dropdown-meny li a {
+    display: block;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #374151;
+    text-decoration: none;
+}
+
+.dropdown-meny li a:hover {
+    background-color: #f3f4f6;
+    color: #1d4ed8;
+}
+
+.dropdown-meny li a.active {
+    color: #1d4ed8;
+    font-weight: 600;
+    border-bottom: none;
+}
+
+/* FALLBACK NAVBAR UTEN JAVASCRIPT (US-NFR15) */
+.no-js .navbar {
+    height: auto;
+    min-height: 64px;
+}
+
+.no-js .navbar-container {
+    height: auto;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.no-js .dropdown-btn {
+    display: none;
+}
+
+.no-js .dropdown-meny {
+    display: block;
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding-left: 16px;
+    background: none;
+    min-width: unset;
+}
+
+.no-js .navbar-links {
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    align-items: flex-start;
+}
+
+/* HVA ER KI - INNHOLD */
+.ki-intro-kort {
+    background-color: #f8fafc;
+    border-left: 4px solid #1d4ed8;
+    border-radius: 8px;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.ki-seksjon {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ki-seksjon h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.ki-seksjon ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ki-seksjon ul li {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* KI TYPER GRID */
+.ki-typer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.ki-type-kort {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ki-type-ikon {
+    font-size: 28px;
+}
+
+.ki-type-kort h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.ki-type-kort p {
+    font-size: 14px;
+    color: #6b7280;
+    line-height: 1.5;
+}
+
+/* KI VERKTØY GRID */
+.ki-verktoy-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.ki-verktoy {
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.ki-verktoy-ikon {
+    font-size: 24px;
+}
+
+.ki-verktoy strong {
+    font-size: 14px;
+    color: #1a1a2e;
+}
+
+.ki-verktoy span {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+/* KI IKKE-LISTE */
+.ki-ikke-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ki-ikke-punkt {
+    background-color: #fef2f2;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #374151;
+}
+
+.ki-advarsel {
+    font-size: 15px;
+    color: #374151;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* FANE INGRESS */
+.fane-ingress {
+    font-size: 16px;
+    color: #374151;
+    line-height: 1.7;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* BEGRENSNINGER */
+.begrensning-kort {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.begrensning-nummer {
+    width: 40px;
+    height: 40px;
+    background-color: #1d3a6e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.begrensning-innhold {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.begrensning-innhold h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.begrensning-innhold p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* VERIFISERING */
+.verifisering-kort {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 28px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.verifisering-ikon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.verifisering-innhold {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.verifisering-innhold h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.verifisering-innhold p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.verifisering-eksempel {
+    background-color: #f0fdf4;
+    border-left: 3px solid #16a34a;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* STEG-FOR-STEG */
+.steg-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.steg-element {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 24px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.steg-element:last-child {
+    border-bottom: none;
+}
+
+.steg-nummer {
+    width: 48px;
+    height: 48px;
+    background-color: #1d4ed8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.steg-innhold {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.steg-innhold h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.steg-innhold p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.steg-innhold a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.steg-innhold a:hover {
+    text-decoration: underline;
+}
+
+.steg-eksempel {
+    background-color: #eff6ff;
+    border-left: 3px solid #1d4ed8;
+    border-radius: 4px;
+    padding: 12px 16px;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* FALLBACK UTEN JS - hva-er-ki faner */
+.no-js #hva-er,
+.no-js #begrensninger,
+.no-js #verifisering,
+.no-js #steg {
+    display: flex;
+    padding-top: 32px;
+    border-top: 2px solid #e5e7eb;
+    margin-top: 32px;
+}
+
+/* PERSONVERN */
+.personvern-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.personvern-punkt {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #374151;
+}
+
+.personvern-punkt.rød {
+    background-color: #fef2f2;
+    border-left: 3px solid #ef4444;
+}
+
+.personvern-scenario {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.scenario-topp {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.scenario-nr {
+    background-color: #1d3a6e;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.personvern-scenario p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.scenario-konsekvens {
+    background-color: #fef9c3;
+    border-left: 3px solid #d97706;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.personvern-ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personvern-ul li {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* TRYGGERE SKRIVING */
+.trygg-eksempel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.trygg-rad {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trygg-feil {
+    background-color: #fef2f2;
+    border-left: 3px solid #ef4444;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.trygg-ok {
+    background-color: #f0fdf4;
+    border-left: 3px solid #16a34a;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* EKSTERN LENKE BOKS */
+.les-mer-boks {
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.les-mer-boks p {
+    font-size: 15px;
+    color: #374151;
+}
+
+.ekstern-lenke {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ekstern-lenke:hover {
+    text-decoration: underline;
+}
+
+/* SCROLL OFFSET FOR STICKY NAVBAR */
+section[id], div[id] {
+    scroll-margin-top: 80px;
+}
+
+/* EKSAMENSFORBEREDELSE */
+.eksamen-tips-liste {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.eksamen-tip {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border-left: 4px solid #16a34a;
+}
+
+.eksamen-tip-nummer {
+    width: 40px;
+    height: 40px;
+    background-color: #16a34a;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.eksamen-tip-innhold {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.eksamen-tip-innhold h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.eksamen-tip-innhold p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.eksamen-eksempel {
+    background-color: #eff6ff;
+    border-left: 3px solid #1d4ed8;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* FORBUDT-BOKS (US-FR08, US-FR11) */
+.forbudt-boks {
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-left: 4px solid #ef4444;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.forbudt-tittel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.forbudt-tittel h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #991b1b;
+}
+
+.forbudt-liste {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.forbudt-liste li {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* FAQ LAYOUT */
+.faq-layout {
+    padding: 48px 24px 80px;
+    background-color: white;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.faq-container h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+/* FAQ ACCORDEON */
+.faq-seksjon {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.faq-element {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-element:first-child {
+    border-top: 1px solid #e5e7eb;
+}
+
+.faq-knapp {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a2e;
+    text-align: left;
+    font-family: 'Segoe UI', sans-serif;
+    gap: 16px;
+}
+
+.faq-knapp:hover {
+    color: #1d4ed8;
+}
+
+.faq-knapp.aktiv {
+    color: #1d4ed8;
+}
+
+.faq-ikon {
+    font-size: 24px;
+    font-weight: 300;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    color: #6b7280;
+}
+
+.faq-ikon::before {
+    content: '+';
+}
+
+.faq-knapp.aktiv .faq-ikon::before {
+    content: '−';
+}
+
+.faq-svar {
+    display: none;
+    padding: 0 0 20px 0;
+}
+
+.faq-svar.aktiv {
+    display: block;
+}
+
+.faq-svar p {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.7;
+}
+
+.faq-svar a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.faq-svar a:hover {
+    text-decoration: underline;
+}
+
+/* FALLBACK UTEN JS - vis alle svar */
+.no-js .faq-svar {
+    display: block;
+}
+
+.no-js .faq-ikon {
+    display: none;
+}
+
+/* ORDLISTE (US-NFR11) */
+.ordliste-seksjon {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ordliste-seksjon h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.ordliste {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.ordliste-element {
+    padding: 16px 0;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ordliste-element:first-child {
+    border-top: 1px solid #e5e7eb;
+}
+
+.ordliste-element dt {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.ordliste-element dd {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+    margin-left: 0;
+}
+
+/* ALFABETISK NAVIGASJON - ORDLISTE */
+.alfabet-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.alfabet-nav a {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d4ed8;
+    text-decoration: none;
+    transition: background-color 0.15s;
+}
+
+.alfabet-nav a:hover {
+    background-color: #1d4ed8;
+    color: white;
+    border-color: #1d4ed8;
+}
+
+/* BOKSTAV-HEADER I ORDLISTE */
+.ordliste-bokstav {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1d4ed8;
+    padding: 24px 0 8px 0;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 4px;
+}

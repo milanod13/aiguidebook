@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="no" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sjekkliste – AIGuidebook</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+    <!-- NAVIGASJON -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo-link" style="text-decoration: none;">
+                <div class="navbar-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+            </a>
+
+            <ul class="navbar-links">
+                <li><a href="../index.html">Forside</a></li>
+
+                <!-- DROPDOWN: LÆR -->
+                <li class="dropdown">
+                    <button class="dropdown-btn active">Lær ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                        <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                        <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                        <li><a href="personvern.html">Personvern</a></li>
+                        <li><a href="sjekkliste.html" class="active">Sjekkliste</a></li>
+                        <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                    </ul>
+                </li>
+
+                <!-- DROPDOWN: RESSURSER -->
+                <li class="dropdown">
+                    <button class="dropdown-btn">Ressurser ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                        <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                        <li><a href="ordliste.html">Ordliste</a></li>
+                        <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+       <!-- BRØDSMULESTI (US-NFR07) -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Forside</a>
+            <span>›</span>
+            <span>Sjekkliste</span>
+        </div>
+    </div>
+
+    <!-- SIDEOVERSKRIFT -->
+    <section class="sjekkliste-header">
+        <div class="sjekkliste-header-container">
+            <h1>Sjekkliste før innlevering</h1>
+            <p>Gå gjennom disse punktene før du leverer arbeidet ditt for å sikre at du har brukt KI på en ansvarlig og akademisk redelig måte.</p>
+            
+            <!-- FREMGANGSINDIKATOR (US-FR06, US-FR09) -->
+            <div class="fremgang">
+                <span class="fremgang-label">Fremgang</span>
+                <span class="fremgang-teller" id="fremgang-teller">0 av 7</span>
+            </div>
+            <div class="fremgang-bar">
+                <div class="fremgang-bar-fill" id="fremgang-bar-fill"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SJEKKLISTE (US-FR06, US-FR09) -->
+    <section class="sjekkliste-seksjon">
+        <div class="sjekkliste-container">
+
+            <div class="sjekk-element" id="sjekk-1">
+                <input type="checkbox" id="punkt-1" onchange="oppdaterFremgang()">
+                <label for="punkt-1">
+                    <span class="sjekk-tittel">Har du oppgitt at du har brukt KI-verktøy?</span>
+                    <span class="sjekk-beskrivelse">Du må alltid være transparent om bruken av KI. Oppgi hvilke verktøy du har brukt og til hva.</span>
+                </label>
+            </div>
+
+            <div class="sjekk-element" id="sjekk-2">
+                <input type="checkbox" id="punkt-2" onchange="oppdaterFremgang()">
+                <label for="punkt-2">
+                    <span class="sjekk-tittel">Er alle KI-genererte tekster korrekt sitert?</span>
+                    <span class="sjekk-beskrivelse">Bruk riktig kildehenvisning i APA 7-format. Se våre eksempler under "Kildehenvisning".</span>
+                </label>
+            </div>
+
+            <div class="sjekk-element" id="sjekk-3">
+                <input type="checkbox" id="punkt-3" onchange="oppdaterFremgang()">
+                <label for="punkt-3">
+                    <span class="sjekk-tittel">Har du sjekket all informasjon fra KI mot troverdige kilder?</span>
+                    <span class="sjekk-beskrivelse">KI kan produsere feil informasjon. Verifiser alltid faktaopplysninger mot akademiske kilder.</span>
+                </label>
+            </div>
+
+            <div class="sjekk-element" id="sjekk-4">
+                <input type="checkbox" id="punkt-4" onchange="oppdaterFremgang()">
+                <label for="punkt-4">
+                    <span class="sjekk-tittel">Er arbeidet ditt i tråd med retningslinjene for ditt emne?</span>
+                    <span class="sjekk-beskrivelse">Ulike emner kan ha forskjellige regler. Sjekk med faglærer om det er tillatt å bruke KI.</span>
+                </label>
+            </div>
+
+            <div class="sjekk-element" id="sjekk-5">
+                <input type="checkbox" id="punkt-5" onchange="oppdaterFremgang()">
+                <label for="punkt-5">
+                    <span class="sjekk-tittel">Har du unngått å dele sensitive eller personlige opplysninger med KI?</span>
+                    <span class="sjekk-beskrivelse">Aldri del personnummer, helseopplysninger, eksamensoppgaver eller andre sensitive data.</span>
+                </label>
+            </div>
+
+            <div class="sjekk-element" id="sjekk-6">
+                <input type="checkbox" id="punkt-6" onchange="oppdaterFremgang()">
+                <label for="punkt-6">
+                    <span class="sjekk-tittel">Har du brukt KI som et verktøy, ikke som erstatning for egen tenkning?</span>
+                    <span class="sjekk-beskrivelse">KI skal støtte læringen din, ikke erstatte den. Vær kritisk og bidra med egne refleksjoner.</span>
+                </label>
+            </div>
+
+            <div class="sjekk-element" id="sjekk-7">
+                <input type="checkbox" id="punkt-7" onchange="oppdaterFremgang()">
+                <label for="punkt-7">
+                    <span class="sjekk-tittel">Kan du forklare og forsvare alt innhold i arbeidet ditt?</span>
+                    <span class="sjekk-beskrivelse">Du må forstå og kunne forklare alt du leverer. Lim ikke inn tekst du ikke forstår.</span>
+                </label>
+            </div>
+
+            <!-- HANDLINGSKNAPPER -->
+            <div class="sjekkliste-knapper">
+                <button class="btn-tilbakestill" onclick="tilbakestill()">
+                    ↺ Tilbakestill
+                </button>
+                <button class="btn-pdf" onclick="lagreSomPDF()">
+                    ⬇ Lagre som PDF
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+<!-- BUNNTEKST -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+                <p>Lær ansvarlig og etisk bruk av kunstig intelligens i studiesammenheng.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Innhold</h4>
+                <ul>
+                    <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                    <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                    <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                    <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ressurser</h4>
+                <ul>
+                    <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                    <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                    <li><a href="ordliste.html">Ordliste</a></li>
+                    <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Universitetet i Sørøst-Norge</li>
+                    <li><a href="mailto:info@usn.no">info@usn.no</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AIGuidebook — Universitetet i Sørøst-Norge. Alle rettigheter reservert.</p>
+            <p class="sist-oppdatert-footer">Sist oppdatert: 23. april 2026</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

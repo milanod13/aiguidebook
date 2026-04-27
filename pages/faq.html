@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="no" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofte stilte spørsmål – AIGuidebook</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+    <!-- NAVIGASJON -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo-link" style="text-decoration: none;">
+                <div class="navbar-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+            </a>
+            <ul class="navbar-links">
+                <li><a href="../index.html">Forside</a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">Lær ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                        <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                        <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                        <li><a href="personvern.html">Personvern</a></li>
+                        <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                        <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn active">Ressurser ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank">USNs retningslinjer</a></li>
+                        <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                        <li><a href="ordliste.html">Ordliste</a></li>
+                        <li><a href="faq.html" class="active">Ofte stilte spørsmål</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BRØDSMULESTI -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Forside</a>
+            <span>›</span>
+            <span>Ofte stilte spørsmål</span>
+        </div>
+    </div>
+
+    <!-- HOVEDINNHOLD -->
+    <div class="faq-layout">
+        <div class="faq-container">
+
+            <h1>Ofte stilte spørsmål</h1>
+            <p class="side-ingress">Her finner du svar på de vanligste spørsmålene om bruk av KI i studiene. Finner du ikke svaret du leter etter, ta kontakt med din faglærer.</p>
+
+            <!-- SPØRSMÅL OG SVAR (ACCORDEON) -->            
+            <section class="faq-seksjon">
+
+                <div class="faq-element" id="faq-1">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-1')">
+                        <span>Hvilke KI-verktøy er lov å bruke ved USN?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Det varierer fra emne til emne. Noen emner tillater bruk av KI, andre forbyr det. Sjekk alltid emnebeskrivelsen eller spør faglærer. Du er alltid ansvarlig for innholdet du leverer, uansett hvilke verktøy du har brukt.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-2">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-2')">
+                        <span>Kan jeg bruke KI til å skrive oppgaver?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Bare hvis faglærer eksplisitt tillater det. Å levere KI-generert tekst som din egen uten å si fra regnes som fusk. Dette kan føre til annullering av eksamen.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-3">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-3')">
+                        <span>Hva skjer hvis jeg blir tatt for juks med KI?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Konsekvensene kan være alvorlige — fra annullering av eksamen til utestengelse fra studiet. USN har egne regler for akademisk urederlighet. Les mer på <a href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank">USNs retningslinjer for KI</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-4">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-4')">
+                        <span>Er KI-generert innhold alltid korrekt?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Nei. KI kan produsere feil eller utdatert informasjon. KI kan også finne på kilder som ikke finnes — dette kalles hallusinering. Kontroller alltid fakta mot pålitelige kilder.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-5">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-5')">
+                        <span>Hva er en "prompt"?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>En prompt er instruksjonen eller spørsmålet du skriver til et KI-verktøy. Jo tydeligere du formulerer deg, jo mer nyttig blir svaret.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-6">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-6')">
+                        <span>Kan KI hjelpe meg med å lære?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Ja. KI kan forklare vanskelige begreper, gi deg øvingsoppgaver og hjelpe deg å forstå feil i kode. Slik bruk er uproblematisk i de fleste sammenhenger. Les mer på siden vår om <a href="eksamen.html">Eksamensforberedelse</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-7">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-7')">
+                        <span>Er det trygt å dele oppgavetekst med KI?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Vær forsiktig. Unngå å lime inn personopplysninger eller sensitiv informasjon. Les personvernerklæringen — altså reglene for hvordan verktøyet håndterer dataene dine — før du bruker det. Les mer på siden vår om <a href="personvern.html">Personvern</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-element" id="faq-8">
+                    <button class="faq-knapp" onclick="visSporsmal('faq-8')">
+                        <span>Hvor kan jeg lære mer om ansvarlig KI-bruk?</span>
+                        <span class="faq-ikon"></span>
+                    </button>
+                    <div class="faq-svar">
+                        <p>Se USNs egne retningslinjer på <a href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank">denne siden</a>. Du finner også ressurser fra <a href="https://www.digdir.no" target="_blank">Digdir (Digitaliseringsdirektoratet)</a>. På denne nettsiden finner du mer om <a href="hva-er-ki.html">Hva er KI?</a>, <a href="lovlig-bruk.html">Tillatt bruk vs. juks</a> og <a href="personvern.html">Personvern</a>.</p>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+    <!-- BUNNTEKST -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+                <p>Lær ansvarlig og etisk bruk av kunstig intelligens i studiesammenheng.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Innhold</h4>
+                <ul>
+                    <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                    <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                    <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                    <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ressurser</h4>
+                <ul>
+                    <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                    <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                    <li><a href="ordliste.html">Ordliste</a></li>
+                    <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Universitetet i Sørøst-Norge</li>
+                    <li><a href="mailto:info@usn.no">info@usn.no</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AIGuidebook — Universitetet i Sørøst-Norge. Alle rettigheter reservert.</p>
+            <p class="sist-oppdatert-footer">Sist oppdatert: 23. april 2026</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="no" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kildehenvisning – AIGuidebook</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+    <!-- NAVIGASJON -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo-link" style="text-decoration: none;">
+                <div class="navbar-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+            </a>
+
+            <ul class="navbar-links">
+                <li><a href="../index.html">Forside</a></li>
+
+                <!-- DROPDOWN: LÆR -->
+                <li class="dropdown">
+                    <button class="dropdown-btn active">Lær ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                        <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                        <li><a href="kildehenvisning.html" class="active">Kildehenvisning</a></li>
+                        <li><a href="personvern.html">Personvern</a></li>
+                        <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                        <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                    </ul>
+                </li>
+
+                <!-- DROPDOWN: RESSURSER -->
+                <li class="dropdown">
+                    <button class="dropdown-btn">Ressurser ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                        <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                        <li><a href="ordliste.html">Ordliste</a></li>
+                        <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- BRØDSMULESTI (US-NFR07) -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Forside</a>
+            <span>›</span>
+            <span>Kildehenvisning</span>
+        </div>
+    </div>
+
+    <!-- HOVEDDEL MED SIDEBAR -->
+    <div class="side-layout">
+        <div class="side-layout-container">
+
+            <!-- HOVEDINNHOLD -->
+            <main class="side-main">
+
+                <!-- SIDEOVERSKRIFT -->
+                <h1>Hvordan sitere KI riktig</h1>
+                <p class="side-ingress">Når du bruker KI-verktøy i studiesammenheng, er det viktig å referere til dem korrekt. Her finner du eksempler på hvordan du siterer KI-verktøy i henhold til APA 7-formatet.</p>
+
+                <!-- APA 7-FORMAT (US-FR05) -->
+                <section id="apa-format">
+                    <h2>APA 7-format for KI-verktøy</h2>
+
+                    <!-- EKSEMPEL 1 -->
+                    <div class="kilde-eksempel">
+                        <span class="kilde-merke">EKSEMPEL 1: MED DELT LENKE</span>
+                        <p>Når du har delt samtalen via "Share"-funksjonen i ChatGPT.</p>
+                        <div class="kode-blokk">
+                            <code id="eks1">OpenAI. (2026, 09. februar). Disposisjon for studentoppgave om AI-guidebook [Stor språkmodell]. ChatGPT. https://chatgpt.com/share/eksempel</code>
+                            <button class="kopier-knapp" onclick="kopierTekst('eks1', this)">📋 Kopier</button>
+                        </div>
+                    </div>
+
+                    <!-- EKSEMPEL 2 -->
+                    <div class="kilde-eksempel">
+                        <span class="kilde-merke">EKSEMPEL 2: UTEN DELT LENKE</span>
+                        <p>Når du ikke har delt lenke tilgjengelig.</p>
+                        <div class="kode-blokk">
+                            <code id="eks2">OpenAI. (2026, 16. april). ChatGPT (versjon GPT-4) [Stor språkmodell]. https://chat.openai.com</code>
+                            <button class="kopier-knapp" onclick="kopierTekst('eks2', this)">📋 Kopier</button>
+                        </div>
+                    </div>
+
+                    <!-- EKSEMPEL 3 -->
+                    <div class="kilde-eksempel">
+                        <span class="kilde-merke">EKSEMPEL 3: CLAUDE / ANTHROPIC</span>
+                        <p>Eksempel på kildehenvisning til Claude.</p>
+                        <div class="kode-blokk">
+                            <code id="eks3">Anthropic. (2026, 16. april). Claude (versjon Claude 3.5 Sonnet) [Stor språkmodell]. https://claude.ai</code>
+                            <button class="kopier-knapp" onclick="kopierTekst('eks3', this)">📋 Kopier</button>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- VIKTIG Å HUSKE (US-FR05) -->
+                <div class="viktig-boks">
+                    <div class="viktig-tittel">
+                        <span>⚠️</span>
+                        <h3>Viktig å huske</h3>
+                    </div>
+                    <ul>
+                        <li>Oppgi alltid når du har brukt KI i arbeidet ditt</li>
+                        <li>Vær spesifikk på hva du har fått hjelp til</li>
+                        <li>Del lenker til samtaler når det er mulig</li>
+                        <li>Sjekk alltid med din faglærer om retningslinjene</li>
+                    </ul>
+                </div>
+
+                <!-- SIST OPPDATERT (US-IK01) -->
+                <p class="sist-oppdatert">Innhold oppdateres jevnlig i tråd med utviklingen i teknologi og lover og regler.</p>
+
+            </main>
+
+            <!-- SIDEBAR -->
+            <aside class="side-sidebar">
+
+                <div class="sidebar-boks">
+                    <h3>På denne siden</h3>
+                    <ul>
+                        <li><a href="#apa-format">APA 7-format</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-boks">
+                    <h3>Relatert</h3>
+                    <ul>
+                        <li><a href="tillat-bruk.html">⚖️ Tillatt bruk vs. juks</a></li>
+                        <li><a href="sjekkliste.html">✅ Sjekkliste</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-boks sidebar-mork">
+                    <h3>Bruk vår sjekkliste</h3>
+                    <p>Gå gjennom alle punktene før du leverer arbeidet ditt.</p>
+                    <a href="sjekkliste.html" class="sidebar-knapp">Åpne sjekklisten →</a>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+
+<!-- BUNNTEKST -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+                <p>Lær ansvarlig og etisk bruk av kunstig intelligens i studiesammenheng.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Innhold</h4>
+                <ul>
+                    <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                    <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                    <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                    <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ressurser</h4>
+                <ul>
+                    <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                    <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                    <li><a href="ordliste.html">Ordliste</a></li>
+                    <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Universitetet i Sørøst-Norge</li>
+                    <li><a href="mailto:info@usn.no">info@usn.no</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AIGuidebook — Universitetet i Sørøst-Norge. Alle rettigheter reservert.</p>
+            <p class="sist-oppdatert-footer">Sist oppdatert: 23. april 2026</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

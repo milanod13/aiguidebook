@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="no" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hva er KI? – AIGuidebook</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+    <!-- NAVIGASJON -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo-link" style="text-decoration: none;">
+                <div class="navbar-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+            </a>
+            <ul class="navbar-links">
+                <li><a href="../index.html">Forside</a></li>
+                <li class="dropdown">
+                    <button class="dropdown-btn active">Lær ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="hva-er-ki.html" class="active">Hva er KI?</a></li>
+                        <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                        <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                        <li><a href="personvern.html">Personvern</a></li>
+                        <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                        <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <button class="dropdown-btn">Ressurser ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="https://www.usn.no/om-usn/regelverk/retningslinjer-for-bruk-av-kunstig-intelligens-ki-ved-eksamen-og-studentoppgaver" target="_blank">USNs retningslinjer</a></li>
+                        <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                        <li><a href="ordliste.html">Ordliste</a></li>
+                        <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BRØDSMULESTI -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Forside</a>
+            <span>›</span>
+            <span>Hva er KI?</span>
+        </div>
+    </div>
+
+    <!-- SIDEOVERSKRIFT -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1>Hva er kunstig intelligens?</h1>
+            <p>Lær hva KI er, hvordan det fungerer, hvilke begrensninger det har, og hvordan du bruker det ansvarlig i studiene dine.</p>
+        </div>
+    </section>
+
+    <!-- FANER OG INNHOLD -->
+    <section class="tabs-section">
+        <div class="tabs-container">
+
+            <!-- FANEKNAPPER -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="visTab('hva-er')">
+                    💡 Hva er KI?
+                </button>
+                <button class="tab-btn" onclick="visTab('begrensninger')">
+                    ⚠️ Begrensninger
+                </button>
+                <button class="tab-btn" onclick="visTab('verifisering')">
+                    🔍 Verifisering
+                </button>
+                <button class="tab-btn" onclick="visTab('steg')">
+                    📋 Steg-for-steg
+                </button>
+            </div>
+
+            <!-- FANE 1: HVA ER KI? -->
+            <div id="hva-er" class="tab-innhold aktiv">
+
+                <div class="ki-intro-kort">
+                    <p>Kunstig intelligens (KI) er teknologi som gjør at datamaskiner kan utføre oppgaver som normalt krever menneskelig intelligens. Det kan være å forstå tekst, analysere informasjon, gjenkjenne bilder eller foreslå løsninger basert på mønstre i data. KI lærer av store datamengder og bruker statistikk til å forutsi hva som er mest sannsynlig riktig svar – den forstår ikke verden slik mennesker gjør, men beregner.</p>
+                </div>
+
+                <div class="ki-seksjon">
+                    <h2>Hvordan fungerer KI?</h2>
+                    <p>KI fungerer ved å:</p>
+                    <ul>
+                        <li><strong>Lære av data</strong> – systemet analyserer store mengder tekst, bilder eller tall for å finne mønstre.</li>
+                        <li><strong>Gjenkjenne sammenhenger</strong> – for eksempel hvilke ord som ofte kommer etter hverandre.</li>
+                        <li><strong>Generere forslag eller løsninger</strong> basert på sannsynlighet, ikke ekte forståelse.</li>
+                        <li><strong>Forbedre seg over tid</strong> gjennom maskinlæring, der algoritmer justerer seg selv basert på erfaring.</li>
+                    </ul>
+                </div>
+
+                <div class="ki-seksjon">
+                    <h2>Ulike typer KI</h2>
+                    <div class="ki-typer-grid">
+                        <div class="ki-type-kort">
+                            <span class="ki-type-ikon">⚙️</span>
+                            <h3>Regelbasert KI</h3>
+                            <p>Systemer som følger forhåndsdefinerte regler laget av mennesker. De lærer ikke selv.</p>
+                        </div>
+                        <div class="ki-type-kort">
+                            <span class="ki-type-ikon">🧠</span>
+                            <h3>Maskinlæring (ML)</h3>
+                            <p>KI som lærer av data i stedet for å bli programmert direkte. Brukes i anbefalingssystemer og bildegjenkjenning.</p>
+                        </div>
+                        <div class="ki-type-kort">
+                            <span class="ki-type-ikon">✨</span>
+                            <h3>Generativ KI</h3>
+                            <p>KI som kan skape nytt innhold – tekst, bilder, kode eller musikk – basert på mønstre den har lært.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ki-seksjon">
+                    <h2>Eksempler på vanlige KI-verktøy</h2>
+                    <div class="ki-verktoy-grid">
+                        <div class="ki-verktoy">
+                            <span class="ki-verktoy-ikon">💬</span>
+                            <strong>ChatGPT</strong>
+                            <span>Generativ tekst</span>
+                        </div>
+                        <div class="ki-verktoy">
+                            <span class="ki-verktoy-ikon">🤖</span>
+                            <strong>Copilot</strong>
+                            <span>Skriving og kode</span>
+                        </div>
+                        <div class="ki-verktoy">
+                            <span class="ki-verktoy-ikon">🔍</span>
+                            <strong>Gemini</strong>
+                            <span>Søk og forklaringer</span>
+                        </div>
+                        <div class="ki-verktoy">
+                            <span class="ki-verktoy-ikon">🎨</span>
+                            <strong>DALL·E</strong>
+                            <span>Bildegenerering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ki-seksjon">
+                    <h2>Hva KI ikke er</h2>
+                    <div class="ki-ikke-liste">
+                        <div class="ki-ikke-punkt">❌ KI tenker ikke som mennesker</div>
+                        <div class="ki-ikke-punkt">❌ KI forstår ikke innholdet den produserer</div>
+                        <div class="ki-ikke-punkt">❌ KI kan ta feil, og gjør det ofte når den mangler data</div>
+                        <div class="ki-ikke-punkt">❌ KI kan ikke vurdere etikk eller kontekst uten menneskelig kontroll</div>
+                    </div>
+                    <p class="ki-advarsel">Derfor må alle KI-svar vurderes kritisk og alltid kvalitetssikres mot faglige kilder.</p>
+                </div>
+
+                <div class="viktig-boks">
+                    <div class="viktig-tittel">
+                        <span>💡</span>
+                        <h3>Hvorfor er KI viktig i studier?</h3>
+                    </div>
+                    <p>KI kan hjelpe deg med å forstå fagstoff, få forklaringer på eget nivå, strukturere tekst og jobbe mer effektivt. Men husk: <strong>KI er et støtteverktøy – ikke en erstatning for egen læring.</strong></p>
+                </div>
+
+            </div>
+
+            <!-- FANE 2: BEGRENSNINGER (US-FR07) -->
+            <div id="begrensninger" class="tab-innhold">
+
+                <p class="fane-ingress">Det er viktig å kjenne til hva KI ikke klarer, slik at du vet når du ikke kan stole på svarene og må verifisere med andre kilder.</p>
+
+                <div class="begrensning-kort">
+                    <div class="begrensning-nummer">1</div>
+                    <div class="begrensning-innhold">
+                        <h2>Hallusinasjon</h2>
+                        <p>KI kan finne på informasjon som høres troverdig ut, men som er helt feil. Den "dikter opp" fakta, navn, datoer og kilder uten å varsle om det. Dette skjer fordi KI ikke sjekker fakta – den genererer tekst basert på mønstre. Vær alltid skeptisk til spesifikke påstander, tall og referanser fra KI.</p>
+                    </div>
+                </div>
+
+                <div class="begrensning-kort">
+                    <div class="begrensning-nummer">2</div>
+                    <div class="begrensning-innhold">
+                        <h2>Utdatert kunnskap</h2>
+                        <p>KI er trent på data frem til et bestemt tidspunkt, kalt «kunnskapsgrense». Den kjenner ikke til nyere hendelser, lover, forskning eller retningslinjer. For eksempel kan en KI ha utdatert informasjon om USNs regler for KI-bruk. Sjekk alltid om informasjonen er oppdatert.</p>
+                    </div>
+                </div>
+
+                <div class="begrensning-kort">
+                    <div class="begrensning-nummer">3</div>
+                    <div class="begrensning-innhold">
+                        <h2>Manglende kildehenvisning</h2>
+                        <p>KI oppgir sjelden presise og verifiserbare kilder. Selv når den nevner titler eller forfattere, kan disse være feil eller fiktive. Du kan ikke bruke KI-genererte referanser direkte i akademiske oppgaver uten å verifisere dem selv.</p>
+                    </div>
+                </div>
+
+                <div class="begrensning-kort">
+                    <div class="begrensning-nummer">4</div>
+                    <div class="begrensning-innhold">
+                        <h2>Ingen ekte forståelse</h2>
+                        <p>KI forstår ikke innholdet den produserer. Den beregner sannsynlighet for hva som er neste ord eller setning, basert på mønstre i treningsdataene – ikke basert på kunnskap eller forståelse av verden. Dette betyr at KI kan produsere faglig feil innhold som likevel høres overbevisende ut.</p>
+                    </div>
+                </div>
+
+                <div class="begrensning-kort">
+                    <div class="begrensning-nummer">5</div>
+                    <div class="begrensning-innhold">
+                        <h2>Kulturell og språklig skjevhet</h2>
+                        <p>KI er trent på data som ikke representerer alle kulturer, språk og perspektiver likt. Engelsk og vestlige perspektiver er overrepresentert. Dette kan føre til partiske, unøyaktige eller kulturelt upassende svar, særlig i fag som jus, samfunnsvitenskap og humaniora.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FANE 3: VERIFISERING (US-FR04) -->
+            <div id="verifisering" class="tab-innhold">
+
+                <p class="fane-ingress">KI kan produsere feil informasjon som høres overbevisende ut. Her er tre konkrete metoder for å sjekke om informasjonen er pålitelig før du bruker den.</p>
+
+                <div class="verifisering-kort">
+                    <div class="verifisering-ikon">🔍</div>
+                    <div class="verifisering-innhold">
+                        <h2>Metode 1: Krysssjekk mot akademiske kilder</h2>
+                        <p>Søk opp påstander fra KI i anerkjente databaser som <strong>Oria</strong>, <strong>Google Scholar</strong> eller pensumlitteraturen din. Hvis du ikke finner støtte for påstanden i troverdige akademiske kilder, skal du ikke bruke den.</p>
+                        <div class="verifisering-eksempel">
+                            <strong>Eksempel:</strong> Hvis KI påstår at «80% av studenter bruker KI ukentlig», søk etter studier som bekrefter dette tallet før du bruker det i en oppgave.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="verifisering-kort">
+                    <div class="verifisering-ikon">📄</div>
+                    <div class="verifisering-innhold">
+                        <h2>Metode 2: Sjekk primærkilden direkte</h2>
+                        <p>Hvis KI oppgir en kilde – en bok, artikkel eller rapport – søk den opp selv og les originalen. KI kan sitere feil tittel, feil forfatter, feil årstall eller til og med oppfinne kilder som ikke eksisterer.</p>
+                        <div class="verifisering-eksempel">
+                            <strong>Huskeregel:</strong> Ikke stol på en referanse uten å ha sett originaldokumentet selv.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="verifisering-kort">
+                    <div class="verifisering-ikon">🎓</div>
+                    <div class="verifisering-innhold">
+                        <h2>Metode 3: Spør faglærer eller bruk faglige ressurser</h2>
+                        <p>Ved tvil om informasjonens pålitelighet, kontakt faglærer eller bruk <strong>USNs bibliotektjenester</strong>. Biblioteket kan hjelpe deg å finne pålitelige primærkilder og vurdere om en kilde er faglig holdbar.</p>
+                        <div class="verifisering-eksempel">
+                            <strong>Tips:</strong> Dette er særlig viktig i fag med strenge krav til kildebruk, som jus, medisin og samfunnsvitenskap.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- FANE 4: STEG-FOR-STEG (US-FR03) -->
+            <div id="steg" class="tab-innhold">
+
+                <p class="fane-ingress">Følg disse stegene for å bruke KI på en ansvarlig og akademisk redelig måte i studiene dine.</p>
+
+                <div class="steg-liste">
+
+                    <div class="steg-element">
+                        <div class="steg-nummer">1</div>
+                        <div class="steg-innhold">
+                            <h2>Definer hva du trenger hjelp til</h2>
+                            <p>Vær konkret og spesifikk om hva du vil ha hjelp med. I stedet for «forklar klimaendringer», spør «forklar hvordan CO₂-utslipp påvirker havtemperaturen, tilpasset et introduksjonskurs i miljøvitenskap». Jo mer kontekst du gir, jo mer relevant blir svaret.</p>
+                        </div>
+                    </div>
+
+                    <div class="steg-element">
+                        <div class="steg-nummer">2</div>
+                        <div class="steg-innhold">
+                            <h2>Skriv en tydelig prompt</h2>
+                            <p>En god prompt inneholder: hva du vil vite, hvilket nivå du er på, og hvilket format du ønsker.</p>
+                            <div class="steg-eksempel">
+                                <strong>Eksempel:</strong> «Jeg er andreårsstudent i sykepleie. Forklar begrepet 'evidensbasert praksis' på en enkel måte med et konkret eksempel fra klinisk hverdag.»
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="steg-element">
+                        <div class="steg-nummer">3</div>
+                        <div class="steg-innhold">
+                            <h2>Les svaret kritisk</h2>
+                            <p>Ikke kopier direkte. Les nøye og still deg selv spørsmålene: Er dette logisk? Stemmer dette med det jeg har lært? Er det noe her som virker rart eller usannsynlig? Marker deler du er usikker på.</p>
+                        </div>
+                    </div>
+
+                    <div class="steg-element">
+                        <div class="steg-nummer">4</div>
+                        <div class="steg-innhold">
+                            <h2>Verifiser mot faglige kilder</h2>
+                            <p>Bruk metodene fra Verifisering-fanen for å sjekke påstandene. Søk i Oria eller Google Scholar. Sjekk at eventuelle referanser KI oppgir faktisk eksisterer og er korrekte.</p>
+                        </div>
+                    </div>
+
+                    <div class="steg-element">
+                        <div class="steg-nummer">5</div>
+                        <div class="steg-innhold">
+                            <h2>Skriv med egne ord</h2>
+                            <p>Bruk KI-svaret som inspirasjon og utgangspunkt, men formuler alltid teksten selv. Dette sikrer at du forstår innholdet, at arbeidet er ditt eget, og at du kan forsvare det ved en eventuell muntlig eksaminasjon.</p>
+                        </div>
+                    </div>
+
+                    <div class="steg-element">
+                        <div class="steg-nummer">6</div>
+                        <div class="steg-innhold">
+                            <h2>Oppgi KI-bruk i oppgaven</h2>
+                            <p>Hvis du har brukt KI som støtte i arbeidet ditt, oppgi det. Se siden for <a href="kildehenvisning.html">Kildehenvisning</a> for hvordan du siterer KI korrekt i APA 7-format.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BUNNTEKST -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+                <p>Lær ansvarlig og etisk bruk av kunstig intelligens i studiesammenheng.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Innhold</h4>
+                <ul>
+                    <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                    <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                    <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                    <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ressurser</h4>
+                <ul>
+                    <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                    <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                    <li><a href="ordliste.html">Ordliste</a></li>
+                    <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Universitetet i Sørøst-Norge</li>
+                    <li><a href="mailto:info@usn.no">info@usn.no</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AIGuidebook — Universitetet i Sørøst-Norge. Alle rettigheter reservert.</p>
+            <p class="sist-oppdatert-footer">Sist oppdatert: 23. april 2026</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

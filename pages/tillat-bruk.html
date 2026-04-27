@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="no" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Læring – AIGuidebook</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script>document.documentElement.classList.remove('no-js')</script>
+</head>
+<body>
+
+    <!-- NAVIGASJON -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="../index.html" class="navbar-logo-link" style="text-decoration: none;">
+                <div class="navbar-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+            </a>
+
+            <ul class="navbar-links">
+                <li><a href="../index.html">Forside</a></li>
+
+                <!-- DROPDOWN: LÆR -->
+                <li class="dropdown">
+                    <button class="dropdown-btn active">Lær ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                        <li><a href="tillat-bruk.html" class="active">Tillatt bruk vs. juks</a></li>
+                        <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                        <li><a href="personvern.html">Personvern</a></li>
+                        <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                        <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                    </ul>
+                </li>
+
+                <!-- DROPDOWN: RESSURSER -->
+                <li class="dropdown">
+                    <button class="dropdown-btn">Ressurser ▾</button>
+                    <ul class="dropdown-meny">
+                        <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                        <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                        <li><a href="ordliste.html">Ordliste</a></li>
+                        <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- BRØDSMULESTI (US-NFR07) -->
+    <div class="breadcrumb">
+        <div class="breadcrumb-container">
+            <a href="../index.html">Forside</a>
+            <span>›</span>
+            <span>Tillatt bruk vs. juks</span>
+        </div>
+    </div>
+
+    <!-- SIDEOVERSKRIFT -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1>Tillatt bruk vs. juks: Konkrete eksempler</h1>
+            <p>Her finner du konkrete eksempler på når det er greit å bruke KI, når det er juks, og grensetilfeller du bør være ekstra oppmerksom på.</p>
+        </div>
+    </section>
+
+    <!-- FANER OG INNHOLD (US-FR01, US-FR02) -->
+    <section class="tabs-section">
+        <div class="tabs-container">
+
+            <!-- FANEKNAPPER -->
+            <div class="tabs">
+                <button class="tab-btn active" onclick="visTab('tillatt')">
+                    ✅ Tillatt bruk
+                </button>
+                <button class="tab-btn" onclick="visTab('juks')">
+                    ❌ Juks
+                </button>
+                <button class="tab-btn" onclick="visTab('grense')">
+                    ⚠️ Grensetilfeller
+                </button>
+            </div>
+
+            <!-- TILLATT BRUK -->
+            <div id="tillatt" class="tab-innhold aktiv">
+
+                <div class="scenario-kort tillatt">
+                    <span class="scenario-merke merke-tillatt">TILLATT BRUK</span>
+                    <h2>Brainstorming og idéutvikling</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Emma bruker ChatGPT til å diskutere ulike vinkler på bacheloroppgaven sin om bærekraftig turisme. Hun spør KI om å foreslå potensielle forskningsspørsmål, og bruker forslagene som utgangspunkt for egen videre tenkning.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette er tillatt fordi Emma bruker KI som et verktøy for å stimulere egen kreativitet. Hun kopierer ikke tekst direkte, men lar seg inspirere til å utvikle egne ideer.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>KI kan brukes som diskusjonspartner i tidlige faser av et prosjekt.</em></p>
+                </div>
+
+                <div class="scenario-kort tillatt">
+                    <span class="scenario-merke merke-tillatt">TILLATT BRUK</span>
+                    <h2>Forbedring av egenskrevet tekst</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Jonas har skrevet et utkast til en rapport på norsk. Han ber ChatGPT om å foreslå forbedringer i språk og struktur, men skriver deretter hele rapporten på nytt selv basert på tilbakemeldingene.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette er akseptabelt fordi Jonas bruker KI som en form for korrekturlesing og får konstruktiv tilbakemelding, men skriver all tekst selv.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>KI kan fungere som et verktøy for språklig forbedring av egenprodusert innhold.</em></p>
+                </div>
+
+                <div class="scenario-kort tillatt">
+                    <span class="scenario-merke merke-tillatt">TILLATT BRUK</span>
+                    <h2>Forklaring av komplekse konsepter</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Sara sliter med å forstå et vanskelig matematisk konsept fra forelesningen. Hun ber ChatGPT om å forklare det på en enklere måte, og bruker forklaringen til å lære konseptet grundig før hun løser oppgavene selv.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette støtter læring og forståelse. Sara bruker KI som et supplement til læreboken, ikke som en erstatning for egen tenkning.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>KI kan brukes som et læringsverktøy for å forstå vanskelig pensum.</em></p>
+                </div>
+
+            </div>
+
+            <!-- JUKS -->
+            <div id="juks" class="tab-innhold">
+
+                <div class="scenario-kort juks">
+                    <span class="scenario-merke merke-juks">JUKS</span>
+                    <h2>Direkte kopiering av KI-generert tekst</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Markus ber ChatGPT om å skrive en hel essay om klimaendringer. Han kopierer teksten direkte inn i dokumentet sitt og leverer den som sitt eget arbeid uten å oppgi kilden.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette er juks og plagiat. Markus utgir KI-generert innhold som sitt eget arbeid, noe som bryter med akademisk redelighet.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>Du kan ikke levere KI-generert tekst som ditt eget arbeid.</em></p>
+                </div>
+
+                <div class="scenario-kort juks">
+                    <span class="scenario-merke merke-juks">JUKS</span>
+                    <h2>Løsning av eksamensoppgaver</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Under en hjemmeeksamen bruker Lisa ChatGPT til å løse matematikkoppgaver. Hun legger inn oppgaveteksten og kopierer løsningene direkte inn i besvarelsen sin.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette er klart juks. Eksamener skal teste din kompetanse, ikke KI-verktøyets evner. Det er også ofte eksplisitt forbudt i eksamensreglementet.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>Bruk av KI under eksamen er forbudt med mindre det er eksplisitt tillatt.</em></p>
+                </div>
+
+                <div class="scenario-kort juks">
+                    <span class="scenario-merke merke-juks">JUKS</span>
+                    <h2>Deling av konfidensielle oppgaver</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Ola laster opp en hel eksamensoppgave med sensitiv informasjon til ChatGPT for å få hjelp til løsningen.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette bryter både med akademisk redelighet og personvernregler. Eksamensoppgaver kan inneholde konfidensielt materiale, og du har ikke lov til å dele dem med tredjepart.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>Del aldri eksamensoppgaver, persondata eller sensitiv informasjon med KI-verktøy.</em></p>
+                </div>
+
+            </div>
+
+            <!-- GRENSETILFELLER -->
+            <div id="grense" class="tab-innhold">
+
+                <div class="scenario-kort grense">
+                    <span class="scenario-merke merke-grense">GRENSETILFELLER</span>
+                    <h2>Oversettelse av tekst</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Nina har funnet relevante engelske forskningsartikler og bruker ChatGPT til å oversette dem til norsk for å forstå innholdet bedre.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette kan være greit hvis formålet er forståelse, men vær forsiktig: du må alltid referere til originalkildene, ikke oversettelsene. Snakk med faglærer om dette er akseptabelt.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>Sjekk med faglærer om oversettelse med KI er tillatt i ditt emne.</em></p>
+                </div>
+
+                <div class="scenario-kort grense">
+                    <span class="scenario-merke merke-grense">GRENSETILFELLER</span>
+                    <h2>Strukturering av notater</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Thomas har tatt omfattende notater fra forelesninger og ber ChatGPT om å organisere dem i en logisk struktur med overskrifter og underpunkter.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette kan være greit hvis notatene er dine egne og du bruker KI bare til å forbedre strukturen. Men vær oppmerksom på at KI ikke skal skrive ny tekst for deg.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>KI kan hjelpe med å organisere egenprodusert innhold, men må brukes transparent.</em></p>
+                </div>
+
+                <div class="scenario-kort grense">
+                    <span class="scenario-merke merke-grense">GRENSETILFELLER</span>
+                    <h2>Kodeskriving i programmeringsoppgaver</h2>
+                    <p class="scenario-label">SITUASJON</p>
+                    <p>Kari bruker GitHub Copilot til å få forslag til kodesnutter mens hun jobber med en programmering-innlevering.</p>
+                    <p class="scenario-label">HVORFOR?</p>
+                    <p>Dette avhenger av emnets retningslinjer. Noen emner tillater bruk av kodeverktøy, mens andre forbyr det. Spør alltid faglærer først.</p>
+                    <hr>
+                    <p class="retningslinje"><strong>Retningslinje:</strong> <em>Retningslinjene for KI-verktøy i koding varierer mellom emner — spør din faglærer.</em></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- USIKKER-BANNER -->
+    <section class="usikker-banner">
+        <div class="usikker-container">
+            <h2>Usikker på om din bruk er tillatt?</h2>
+            <p>Når i tvil, spør faglærer før du bruker KI-verktøy. Det er alltid bedre å spørre enn å risikere brudd på retningslinjene.</p>
+        </div>
+    </section>
+    <p class="sist-oppdatert" style="max-width: 1200px; margin: -48px auto 48px; padding: 0 24px;">
+        Innhold oppdateres jevnlig i tråd med utviklingen i teknologi og lover og regler.
+    </p>
+
+    <!-- BUNNTEKST -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-icon">📖</span>
+                    <span class="logo-text">AIGuidebook</span>
+                </div>
+                <p>Lær ansvarlig og etisk bruk av kunstig intelligens i studiesammenheng.</p>
+            </div>
+            <div class="footer-column">
+                <h4>Innhold</h4>
+                <ul>
+                    <li><a href="hva-er-ki.html">Hva er KI?</a></li>
+                    <li><a href="tillat-bruk.html">Tillatt bruk vs. juks</a></li>
+                    <li><a href="kildehenvisning.html">Kildehenvisning</a></li>
+                    <li><a href="personvern.html">Personvern</a></li>
+                    <li><a href="sjekkliste.html">Sjekkliste</a></li>
+                    <li><a href="eksamen.html">Eksamensforberedelse</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Ressurser</h4>
+                <ul>
+                    <li><a href="https://www.usn.no/student/regler-og-rettigheter/ki-kunstig-intelligens/" target="_blank">USNs retningslinjer</a></li>
+                    <li><a href="https://www.usn.no/om-usn/personvern/" target="_blank">USNs personvernside</a></li>
+                    <li><a href="ordliste.html">Ordliste</a></li>
+                    <li><a href="faq.html">Ofte stilte spørsmål</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Kontakt</h4>
+                <ul>
+                    <li>Universitetet i Sørøst-Norge</li>
+                    <li><a href="mailto:info@usn.no">info@usn.no</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 AIGuidebook — Universitetet i Sørøst-Norge. Alle rettigheter reservert.</p>
+            <p class="sist-oppdatert-footer">Sist oppdatert: 23. april 2026</p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
