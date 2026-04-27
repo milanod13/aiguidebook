@@ -13,6 +13,7 @@ aiguidebook/
 │   └── styles.css           # All CSS-styling
 ├── js/
 │   └── main.js              # JavaScript-funksjonalitet
+├── icons/                   # SVG-ikoner
 └── pages/
     ├── tillatt-bruk.html    # Tillatt bruk vs. juks
     ├── kildehenvisning.html # Kildehenvisning APA
@@ -52,6 +53,7 @@ eller bruk Live Server i VS Code.
 | US-FR12 | Personvern med lenke til USN | ✅ |
 | US-NFR01 | 5 temaer dekket | ✅ |
 | US-NFR02 | Sist oppdatert synlig | ✅ |
+| US-NFR05 | Responsivt design | ✅ |
 | US-NFR07 | Kildehenvisning ≤2 klikk | ✅ |
 | US-NFR08 | Gjennomsnitt under 25 ord per setning | ✅ |
 | US-NFR10 | Ordliste tilgjengelig | ✅ |

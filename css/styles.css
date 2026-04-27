@@ -15,7 +15,7 @@ body {
 .navbar {
     background-color: white;
     border-bottom: 1px solid #e5e7eb;
-    padding: 0 24px;
+    padding: 0 40px;
     height: 64px;
     position: sticky;
     top: 0;
@@ -23,7 +23,7 @@ body {
 }
 
 .navbar-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -40,6 +40,12 @@ body {
     color: #1a1a2e;
 }
 
+.navbar-logo img {
+    width: 24px;
+    height: 24px;
+    stroke-width: 2.5;
+}
+
 .navbar-links {
     display: flex;
     list-style: none;
@@ -50,6 +56,7 @@ body {
     text-decoration: none;
     color: #4b5563;
     font-size: 15px;
+    font-weight: 500;
 }
 
 .navbar-links a.active {
@@ -98,11 +105,11 @@ body {
 /* HERO */
 .hero {
     background-color: #e8f0fb;
-    padding: 80px 24px;
+    padding: 80px 40px;
 }
 
 .hero-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -158,6 +165,110 @@ body {
     background-color: #3b82f6;
 }
 
+/* HERO - IKONER ROTASJON OG DEGRADÉ */
+.hero {
+    background: linear-gradient(180deg, #dce8f8 0%, #ffffff 100%);
+}
+
+.hero-icons .hero-icon:nth-child(1) { 
+    background-color: #1e3799;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-8deg);
+}
+
+.hero-icons .hero-icon:nth-child(2) { 
+    background-color: #3b82f6;
+    width: 68px;
+    height: 68px;
+    transform: rotate(4deg);
+}
+
+.hero-icons .hero-icon:nth-child(3) { 
+    background-color: #1e3a5f;
+    width: 80px;
+    height: 80px;
+    transform: rotate(-6deg);
+}
+
+/* IKONOGRAFIK - GENERELLE IKONER */
+.icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+}
+
+.icon-lg {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-xl {
+    width: 48px;
+    height: 48px;
+}
+
+.card-icon img {
+    filter: invert(27%) sepia(89%) saturate(1200%) hue-rotate(210deg) brightness(90%);
+}
+
+.alert-icon img {
+    filter: invert(27%) sepia(89%) saturate(800%) hue-rotate(330deg) brightness(80%);
+}
+
+.footer-logo img {
+    filter: invert(1);
+}
+
+/* TAB IKONER */
+.tab-btn img {
+    filter: invert(40%) sepia(5%) saturate(500%) hue-rotate(180deg) brightness(90%);
+}
+
+.tab-btn.active img {
+    filter: invert(20%) sepia(90%) saturate(1500%) hue-rotate(210deg) brightness(90%);
+}
+
+.ki-type-ikon img,
+.ki-verktoy-ikon img,
+.verifisering-ikon img {
+    filter: invert(20%) sepia(90%) saturate(1500%) hue-rotate(210deg) brightness(90%);
+}
+
+.forbudt-tittel img {
+    filter: invert(20%) sepia(90%) saturate(2000%) hue-rotate(340deg) brightness(80%);
+}
+
+.sidebar-boks a img {
+    filter: invert(20%) sepia(90%) saturate(1500%) hue-rotate(210deg) brightness(90%);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.trygg-ok img {
+    filter: invert(35%) sepia(80%) saturate(800%) hue-rotate(100deg) brightness(90%);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.trygg-feil img {
+    filter: invert(20%) sepia(90%) saturate(2000%) hue-rotate(340deg) brightness(80%);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+.viktig-tittel img {
+    filter: invert(60%) sepia(80%) saturate(800%) hue-rotate(10deg) brightness(90%);
+}
+
+.scenario-konsekvens img {
+    filter: invert(60%) sepia(80%) saturate(800%) hue-rotate(10deg) brightness(90%);
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
 /* PERSONVERNVARSEL (US-NFR12) */
 .alert-banner {
     background-color: #fef2f2;
@@ -189,12 +300,12 @@ body {
 
 /* LÆRINGSKORT */
 .cards-section {
-    padding: 80px 24px;
+    padding: 80px 40px;
     background-color: white;
 }
 
 .cards-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -258,12 +369,12 @@ body {
 .footer {
     background-color: #0f172a;
     color: #e2e8f0;
-    padding: 64px 24px 0;
+    padding: 64px 40px 0;
     margin-top: 80px;
 }
 
 .footer-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -337,12 +448,12 @@ body {
 
 /* SIDEOVERSKRIFT */
 .page-header {
-    padding: 60px 24px 40px;
+    padding: 60px 40px 40px;
     background-color: white;
 }
 
 .page-header-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -362,12 +473,12 @@ body {
 
 /* FANER (US-FR01, US-FR02) */
 .tabs-section {
-    padding: 0 24px 80px;
+    padding: 0 40px 80px;
     background-color: white;
 }
 
 .tabs-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -540,13 +651,13 @@ body {
 
 /* BRØDSMULESTI (US-NFR07) */
 .breadcrumb {
-    padding: 12px 24px;
+    padding: 12px 40px;
     background-color: white;
     border-bottom: 1px solid #e5e7eb;
 }
 
 .breadcrumb-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -571,7 +682,7 @@ body {
 }
 
 .side-layout-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 300px;
@@ -762,12 +873,12 @@ body {
 
 /* SJEKKLISTE OVERSKRIFT (US-FR06, US-FR09) */
 .sjekkliste-header {
-    padding: 60px 24px 40px;
+    padding: 60px 40px 40px;
     background-color: white;
 }
 
 .sjekkliste-header-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -823,12 +934,12 @@ body {
 
 /* SJEKKLISTE ELEMENTER */
 .sjekkliste-seksjon {
-    padding: 0 24px 80px;
+    padding: 0 40px 80px;
     background-color: white;
 }
 
 .sjekkliste-container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -979,7 +1090,8 @@ a.navbar-logo-link .navbar-logo {
     display: none;
     position: absolute;
     top: 40px;
-    left: 0;
+    right: 0;
+    left: auto;
     background-color: white;
     border: 1px solid #e5e7eb;
     border-radius: 8px;
@@ -1570,12 +1682,12 @@ section[id], div[id] {
 
 /* FAQ LAYOUT */
 .faq-layout {
-    padding: 48px 24px 80px;
+    padding: 48px 40px 80px;
     background-color: white;
 }
 
 .faq-container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
