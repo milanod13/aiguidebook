@@ -136,10 +136,12 @@ function visSporsmal(faqId) {
     }
 }
 // Hamburger meny
+// Hamburger meny
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.querySelector('.navbar-links');
 if (hamburger && navLinks) {
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('open');
+        hamburger.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
     });
 }
