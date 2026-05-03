@@ -1887,11 +1887,9 @@ section[id], div[id] {
     height: auto;
   }
 
-  .navbar-links {
-    flex-direction: column;
-    gap: 4px;
-    width: 100%;
-  }
+.navbar-links {
+    display: none;
+}
 
   .dropdown-meny {
     position: static;
