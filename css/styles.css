@@ -1888,7 +1888,7 @@ section[id], div[id] {
   }
 
 .navbar-links {
-    display: none;
+    display: none !important;
 }
 
   .dropdown-meny {
