@@ -135,3 +135,11 @@ function visSporsmal(faqId) {
         knapp.classList.add('aktiv');
     }
 }
+// Hamburger meny
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.navbar-links');
+if (hamburger && navLinks) {
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+}
