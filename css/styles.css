@@ -1964,3 +1964,20 @@ section[id], div[id] {
   /* USIKKER BANNER */
   .usikker-container { padding: 32px 20px; }
 }
+/* HAMBURGER OPEN */
+  .navbar-links.open > li > .dropdown-btn {
+    display: block;
+    padding: 8px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+
+  .navbar-links.open > li > a {
+    display: block;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #4b5563;
+  }
+
+}
