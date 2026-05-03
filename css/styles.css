@@ -1875,34 +1875,9 @@ section[id], div[id] {
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
-  .navbar {
-    height: auto;
-    padding: 12px 20px;
-  }
-
-  .navbar-container {
-    flex-wrap: wrap;
-    gap: 12px;
-    height: auto;
-  }
-
 .navbar-links {
     display: none !important;
 }
-
-  .dropdown-meny {
-    position: static;
-    box-shadow: none;
-    border: none;
-    padding-left: 12px;
-    background: none;
-    display: block;
-  }
-
-  .dropdown-btn {
-    display: none;
-  }
 
   /* HERO */
   .hero {
