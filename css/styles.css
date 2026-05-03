@@ -1870,3 +1870,167 @@ section[id], div[id] {
     border-bottom: 2px solid #e5e7eb;
     margin-bottom: 4px;
 }
+
+/*RESPONSIVT DESIGN — MOBIL*/
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    height: auto;
+    padding: 12px 20px;
+  }
+
+  .navbar-container {
+    flex-wrap: wrap;
+    gap: 12px;
+    height: auto;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .dropdown-meny {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding-left: 12px;
+    background: none;
+    display: block;
+  }
+
+  .dropdown-btn {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-icons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* ALERT */
+  .alert-banner {
+    margin: 16px 20px;
+  }
+
+  /* CARDS */
+  .cards-section {
+    padding: 48px 20px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* SIDEBAR LAYOUT */
+  .side-layout {
+    padding: 32px 20px 48px;
+  }
+
+  .side-layout-container {
+    grid-template-columns: 1fr;
+  }
+
+  .side-sidebar {
+    position: static;
+  }
+
+  /* KI GRIDS */
+  .ki-typer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ki-verktoy-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* PAGE HEADER */
+  .page-header {
+    padding: 32px 20px 24px;
+  }
+
+  .page-header h1 {
+    font-size: 28px;
+  }
+
+  /* TABS */
+  .tabs-section {
+    padding: 0 20px 48px;
+  }
+
+  .tab-btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  /* SJEKKLISTE */
+  .sjekkliste-header {
+    padding: 32px 20px 24px;
+  }
+
+  .sjekkliste-header h1 {
+    font-size: 28px;
+  }
+
+  .sjekkliste-seksjon {
+    padding: 0 20px 48px;
+  }
+
+  .sjekkliste-knapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* FAQ */
+  .faq-layout {
+    padding: 32px 20px 48px;
+  }
+
+  .faq-container h1 {
+    font-size: 28px;
+  }
+
+  /* BREADCRUMB */
+  .breadcrumb {
+    padding: 10px 20px;
+  }
+
+  /* USIKKER BANNER */
+  .usikker-container {
+    padding: 32px 20px;
+  }
+}
