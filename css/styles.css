@@ -1885,48 +1885,81 @@ section[id], div[id] {
 }
 
 /* RESPONSIVT DESIGN — MOBIL */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: #1a1a2e;
+    padding: 4px 8px;
+}
+
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   .navbar { padding: 0 20px; }
-  .navbar-container { height: 64px; }
+  .navbar-container { height: 64px; flex-wrap: wrap; align-content: center; }
   .hamburger { display: block; }
-  .navbar-links { display: none !important; }
+
+  .navbar-links {
+    display: none !important;
+  }
+
   .navbar-links.open {
     display: flex !important;
     flex-direction: column;
     width: 100%;
-    padding: 8px 0 12px;
-    gap: 4px;
+    background: white;
     border-top: 1px solid #e5e7eb;
+    padding: 8px 0 16px;
+    gap: 0;
   }
- .navbar-links.open .dropdown-btn { 
-    display: none; 
-}
-.navbar-links.open .dropdown-meny {
-    position: static !important;
-    box-shadow: none !important;
-    border: none !important;
-    border-top: 1px solid #e5e7eb !important;
-    padding: 4px 0 4px 16px !important;
-    background: #f9fafb !important;
-    display: block !important;
-    min-width: unset !important;
-    width: 100% !important;
-    z-index: auto !important;
-}
-    .navbar-links.open > li > .dropdown-btn {
-    display: block !important;
-    padding: 10px 0;
+
+  .navbar-links.open > li {
+    padding: 0;
+  }
+
+  .navbar-links.open > li > a {
+    display: block;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #1a1a2e;
+    font-weight: 600;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .navbar-links.open > li > .dropdown-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 16px;
     font-size: 15px;
     font-weight: 600;
     color: #1a1a2e;
+    border-bottom: 1px solid #f3f4f6;
     pointer-events: none;
-}
+  }
+
+  .navbar-links.open .dropdown-meny {
+    display: block !important;
+    position: static !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #f9fafb !important;
+    min-width: unset !important;
+    padding: 4px 0 8px 0 !important;
+  }
+
+  .navbar-links.open .dropdown-meny li a {
+    padding: 10px 32px;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+  }
+
   .no-js .navbar-links { display: flex !important; flex-direction: column; }
   .no-js .hamburger { display: none; }
 
-  /* HERO */
   .hero { padding: 40px 20px; }
   .hero-container { flex-direction: column; }
   .hero-text h1 { font-size: 28px; }
@@ -1934,64 +1967,36 @@ section[id], div[id] {
   .hero-buttons { flex-direction: column; }
   .hero-icons { flex-direction: row; justify-content: center; }
 
-  /* ALERT */
   .alert-banner { margin: 16px 20px; }
 
-  /* CARDS */
   .cards-section { padding: 48px 20px; }
   .cards-grid { grid-template-columns: 1fr; }
 
-  /* FOOTER */
   .footer { padding: 40px 20px 0; }
   .footer-container { grid-template-columns: 1fr; gap: 24px; }
 
-  /* SIDEBAR */
   .side-layout { padding: 32px 20px 48px; }
   .side-layout-container { grid-template-columns: 1fr; }
   .side-sidebar { position: static; }
 
-  /* KI GRIDS */
   .ki-typer-grid { grid-template-columns: 1fr; }
   .ki-verktoy-grid { grid-template-columns: repeat(2, 1fr); }
 
-  /* PAGE HEADER */
   .page-header { padding: 32px 20px 24px; }
   .page-header h1 { font-size: 28px; }
 
-  /* TABS */
   .tabs-section { padding: 0 20px 48px; }
   .tab-btn { padding: 10px 14px; font-size: 14px; }
 
-  /* SJEKKLISTE */
   .sjekkliste-header { padding: 32px 20px 24px; }
   .sjekkliste-header h1 { font-size: 28px; }
   .sjekkliste-seksjon { padding: 0 20px 48px; }
   .sjekkliste-knapper { flex-direction: column; align-items: flex-start; }
 
-  /* FAQ */
   .faq-layout { padding: 32px 20px 48px; }
   .faq-container h1 { font-size: 28px; }
 
-  /* BREADCRUMB */
   .breadcrumb { padding: 10px 20px; }
 
-  /* USIKKER BANNER */
   .usikker-container { padding: 32px 20px; }
-}
-/* HAMBURGER OPEN */
-  .navbar-links.open > li > .dropdown-btn {
-    display: block;
-    padding: 8px 0;
-    font-size: 15px;
-    font-weight: 600;
-    color: #1a1a2e;
-  }
-
-  .navbar-links.open > li > a {
-    display: block;
-    padding: 8px 0;
-    font-size: 15px;
-    color: #4b5563;
-  }
-
 }
