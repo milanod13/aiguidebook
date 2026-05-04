@@ -1897,8 +1897,18 @@ section[id], div[id] {
 
 @media (max-width: 768px) {
 
-  .navbar { padding: 0 20px; }
-  .navbar-container { height: 64px; flex-wrap: wrap; align-content: center; }
+  .navbar { 
+    padding: 0 20px; 
+    height: auto;
+    min-height: 64px;
+}
+  .navbar-container { 
+    min-height: 64px; 
+    height: auto;
+    flex-wrap: wrap; 
+    align-items: center;
+    padding: 0;
+}
   .hamburger { display: block; }
 
   .navbar-links {
